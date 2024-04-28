@@ -79,6 +79,10 @@ library
   build-tools:
       c2hs              >= 0.21
 
+  -- https://github.com/vmchale/libarchive/issues/12
+  cc-options: -D_Alignas(t)=__attribute__((__aligned__(t)))
+
+
 
 source-repository head
   type:                 git
